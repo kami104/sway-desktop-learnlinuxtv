@@ -17,7 +17,7 @@ See the [official guide](https://www.learnlinux.tv/how-i-set-up-the-sway-window-
    3. [Manual installation](#manual-installation)
       1. [Installing dependencies](#installing-dependencies)
       2. [Copying configuration files](#copying-configuration-files)
-      3. [Making sure all scripts are executable]()
+      3. [Making sure all scripts are executable](#making-sure-all-scripts-are-executable)
 
 <br/>
 
@@ -42,16 +42,43 @@ This guide assumes:
 
 ## Manual installation.
 
-The next steps follow the guide the video indicated above:
-
 ### Installing dependencies
 
 We install the necessary dependencies and create the necessary folders with these commands:
 ```bash
-sudo apt install alacritty light sway swaybg swayidle swayimg swaylock waybar wofi fonts-font-awesome
+sudo apt update && sudo apt install -y alacritty light sway swaybg swayidle swayimg swaylock waybar wofi fonts-font-awesome git
 mkdir -p ~/.config/sway ~/.config/waybar ~/.config/wofi
 ```
+
+> [!NOTE]
+> We are also installing git to download the configuration files on the next step.
+
+<br/>
 
 ### Copying configuration files
 
 Now we copy the contents of the forlder [sway](/.config/sway), [waybar](/.config/waybar), and [wofi](/.config/wofi) in this repository into the folders we have already creted in our machine.
+To do so, we will download this repository in the system temporary folder (`/tmp`).
+
+```bash
+cd /tmp
+git clone https://github.com/kami104/sway-desktop-learnlinuxtv.git
+```
+
+Now we copy the downloaded files to the respective folders inside `~/.config/...`
+
+```bash
+cp -r /tmp/.config/sway/ ~/.config/sway/
+cp -r /tmp/.config/waybar/ ~/.config/waybar/
+cp -r /tmp/.config/wofi/ ~/.config/wofi/
+```
+
+<br/>
+
+### Making sure all scripts are executable
+
+To be sure all copied `.sh` scripts are executable, run the follow command:
+
+```bash
+chmod +x ~/.config/sway/*.sh
+```
