@@ -16,7 +16,7 @@ See the [official guide](https://www.learnlinux.tv/how-i-set-up-the-sway-window-
    2. [One command deploy (Work in progress).](#one-command-deploy)
    3. [Manual installation](#manual-installation)
       1. [Installing dependencies](#installing-dependencies)
-      2. [Copying configuration files]()
+      2. [Copying configuration files](#copying-configuration-files)
       3. [Making sure all scripts are executable]()
 
 <br/>
@@ -46,7 +46,12 @@ The next steps follow the guide the video indicated above:
 
 ### Installing dependencies
 
-We install the necessary dependencies with this command:
+We install the necessary dependencies and create the necessary folders with these commands:
 ```bash
 sudo apt install alacritty light sway swaybg swayidle swayimg swaylock waybar wofi fonts-font-awesome
+mkdir -p ~/.config/sway ~/.config/waybar ~/.config/wofi
 ```
+
+### Copying configuration files
+
+Now we copy the contents of the forlder [sway](/.config/sway), [waybar](/.config/waybar), and [wofi](/.config/wofi) in this repository into the folders we have already creted in our machine.
