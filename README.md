@@ -47,7 +47,6 @@ This guide assumes:
 We install the necessary dependencies and create the necessary folders with these commands:
 ```bash
 sudo apt update && sudo apt install -y alacritty light sway swaybg swayidle swayimg swaylock waybar wofi fonts-font-awesome git
-mkdir -p ~/.config/sway ~/.config/waybar ~/.config/wofi
 ```
 
 > [!NOTE]
@@ -65,13 +64,15 @@ cd /tmp
 git clone https://github.com/kami104/sway-desktop-learnlinuxtv.git
 ```
 
-Now we copy the downloaded files to the respective folders inside `~/.config/...`
+Now we copy the downloaded files into the folder `~/.config/...`
 
 ```bash
 cp -r /tmp/sway-desktop-learnlinuxtv/.config/sway/ ~/.config/sway/
 cp -r /tmp/sway-desktop-learnlinuxtv/.config/waybar/ ~/.config/waybar/
 cp -r /tmp/sway-desktop-learnlinuxtv/.config/wofi/ ~/.config/wofi/
 ```
+> [!NOTE]
+> The previous commands will also create de folders `sway`, `waybar` and `wofi` inside `~/.config/`
 
 <br/>
 
