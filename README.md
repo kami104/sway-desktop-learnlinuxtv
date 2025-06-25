@@ -83,3 +83,4 @@ To be sure all copied `.sh` scripts are executable, run the follow command:
 ```bash
 chmod +x ~/.config/sway/*.sh
 ```
+Now you can execute your Sway Desktop enviroment running the command `sway` after login.
