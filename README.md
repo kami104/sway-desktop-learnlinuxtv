@@ -1,4 +1,4 @@
-# Sway Desktop Enviroment from [Learn Linux TV](https://www.youtube.com/channel/UCxQKHvKbmSzGMvUrVtJYnUA)
+# Sway Desktop Enviroment setup from [Learn Linux TV](https://www.youtube.com/channel/UCxQKHvKbmSzGMvUrVtJYnUA)
 This repository is based on the Sway Desktop Enviroment setup done by Jay Lacroix  from Learn Linux TV
 
 > [!WARNING]
