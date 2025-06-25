@@ -68,9 +68,9 @@ git clone https://github.com/kami104/sway-desktop-learnlinuxtv.git
 Now we copy the downloaded files to the respective folders inside `~/.config/...`
 
 ```bash
-cp -r /tmp/.config/sway/ ~/.config/sway/
-cp -r /tmp/.config/waybar/ ~/.config/waybar/
-cp -r /tmp/.config/wofi/ ~/.config/wofi/
+cp -r /tmp/sway-desktop-learnlinuxtv/.config/sway/ ~/.config/sway/
+cp -r /tmp/sway-desktop-learnlinuxtv/.config/waybar/ ~/.config/waybar/
+cp -r /tmp/sway-desktop-learnlinuxtv/.config/wofi/ ~/.config/wofi/
 ```
 
 <br/>
