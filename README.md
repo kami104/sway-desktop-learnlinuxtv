@@ -17,7 +17,7 @@ See the [official guide](https://www.learnlinux.tv/how-i-set-up-the-sway-window-
    3. [Manual installation](#manual-installation)
       1. [Installing dependencies](#installing-dependencies)
       2. [Copying configuration files](#copying-configuration-files)
-      3. [Making sure all scripts are executable](#making-sure-all-scripts-are-executable)
+      3. [Making all scripts executable](#making-all-scripts-executable)
 
 <br/>
 
@@ -76,7 +76,7 @@ cp -r /tmp/sway-desktop-learnlinuxtv/.config/wofi/ ~/.config/wofi/
 
 <br/>
 
-### Making sure all scripts are executable
+### Making all scripts executable
 
 To be sure all copied `.sh` scripts are executable, run the follow command:
 
